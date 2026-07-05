@@ -1,5 +1,10 @@
 # YouTube Audio Scrubber
 
+## Preview
+
+![AudioScrub popup preview](assets/preview.png)
+
+
 Chrome extension for audio scrubbing on YouTube.
 
 ## What it does
