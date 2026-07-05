@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTube Audio Scrubber</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="top-row">
+        <img class="brand-mark" src="brand-icon.png" alt="">
+        <div class="title-block">
+          <h1>AudioScrub</h1>
+          <p id="statusText">Checking YouTube tab</p>
+        </div>
+        <button id="settingsButton" class="icon-button" type="button" title="Shortcut">⇧S</button>
+        <button id="toggleButton" class="switch" type="button" aria-label="Toggle Audio Scrub" aria-pressed="false">
+          <span></span>
+        </button>
+      </section>
+
+      <section class="state-card">
+        <div class="dot" id="stateDot"></div>
+        <div>
+          <div id="stateLabel" class="state-label">Off</div>
+          <div id="stateMeta" class="state-meta">Shift+S toggles on the page</div>
+        </div>
+      </section>
+
+      <section class="cards" aria-label="Controls">
+        <div class="mini-card">
+          <div class="card-icon">🎧</div>
+          <strong id="audioState">Off</strong>
+          <span>Preview</span>
+        </div>
+        <div class="mini-card">
+          <div class="card-icon">⇧S</div>
+          <strong>Shift+S</strong>
+          <span>Toggle</span>
+        </div>
+        <div class="mini-card">
+          <div class="card-icon">▶</div>
+          <strong id="videoState">No</strong>
+          <span>Video</span>
+        </div>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
